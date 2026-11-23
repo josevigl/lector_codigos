@@ -1,0 +1,28 @@
+capture:
+  # left, top, right, bottom en el monitor capturado por DXcam
+  roi: [0, 0, 320, 80]
+  fps: 60
+
+vision:
+  mean_difference_threshold: 3.0
+
+recognition:
+  confidence_threshold: 0.75
+  upscale: 2.0
+  # La región contiene una sola línea horizontal.
+  use_text_detection: false
+  use_angle_classifier: false
+
+validation:
+  dedup_ttl_seconds: 900
+
+automation:
+  # Desactivado hasta que selecciones el campo y el botón en tu pantalla.
+  enabled: false
+  code_field: [0, 0]
+  continue_button: [0, 0]
+  page_wait_ms: 250
+
+logging:
+  level: INFO
+  metrics_interval_seconds: 30

@@ -1,0 +1,23 @@
+# Entornos virtuales
+.venv/
+.venv*/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+
+# Configuración local: incluye coordenadas de pantalla
+config.yaml
+
+# Logs y archivos locales
+logs/
+*.log
+.env
+.env.*
+
+# Archivos de editor
+.vscode/
+.idea/
